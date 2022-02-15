@@ -1,4 +1,4 @@
-# :world_map: Masterplan Cottbuser Ostsee
+# :world_map: Masterplan Cottbuser Ostsee 3.0
 :white_check_mark: Georeferenziertes Rendering (Rasterbild) erstellen und als Web-Map publizieren mit Standortermittlung.
 
 ## :computer: Link [https://github.com/stadtentwicklung/map1)
