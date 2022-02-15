@@ -1,10 +1,9 @@
 # :world_map: Masterplan Cottbuser Ostsee
-:white_check_mark: Georeferenziertes Rendering erstellen und als Web-Map publizieren mit Standortermittlung.
+:white_check_mark: Georeferenziertes Rendering (Rasterbild) erstellen und als Web-Map publizieren mit Standortermittlung.
 
-This repository is an update of:
-## :computer: Link [https://github.com/stadtentwicklung/map1)
+## :computer: This repository is an update of [https://github.com/stadtentwicklung/map1)
 
-Check the link above for detailed information.
+Check the link above for a detailed README. Here comes new information about inovations with the render-pipeline.   
 
 ### :camera_flash: WebMapApp-Screenshot:
 ![Screenshot der GitHub-Pages App](https://raw.githubusercontent.com/stadtentwicklung/map1/master/img/screenshot.JPG) 
