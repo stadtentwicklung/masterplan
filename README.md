@@ -3,8 +3,8 @@
 
 ## :computer: Link [https://github.com/stadtentwicklung/map1)
 
-This repo above is the original with a detailed README with more material of how to create such a map in GIS on desktop.
-Here are some new information provided about the render-pipeline.   
+This link above shows the original repository with a detailed README with more material of how to create such a map in GIS on desktop.
+Here are some new information provided about the render-pipeline and the raster-look.   
 
 ### :camera_flash: Webmap 2.0:
 ![Screenshot der GitHub-Pages App](https://raw.githubusercontent.com/stadtentwicklung/masterplan/master/img/update.JPG)
