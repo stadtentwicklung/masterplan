@@ -15,25 +15,42 @@ Here are some new information provided about the render-pipeline and the raster-
 
 ## :rocket: Rendering in detail:
 
-### 1. The original georeferenced vector plan is saved as a raster image (you can see a piece of the whole plan in two versions: (1) no streets an (2) with classified illustrated streets).
+### 1. The original georeferenced vector plan is saved as a raster image (you can see a piece of the whole plan in two versions: (1) no streets and (2) with classified street infrastructure. I wanted to know what looks better at the end: 
+
+(1) streets from the vector plan on top or (2) streets included in the render-process.   
 
 ![screenshot raster image](https://raw.githubusercontent.com/stadtentwicklung/masterplan/master/img/01_plan_raster.png)
 
-Der 1. [Masterplan Cottbuser Ostsee](https://www.cottbus.de/verwaltung/strukturentwicklung/ostsee/) (MaplOS) wurde vor ca. 15 Jahren mit AutoCAD erstellt. Das Projekt hat während dieser Zeit über 250 Layer angesammelt. Das dargestellte Gebiet des 3. Updates des MaplOS (MaplOS3) ist von 100 km&sup2; auf 180 km&sup2; gewachsen. Das Layout des Masterplans wurde auf ein DIN A1 Format gesetzt, womit die Darstellung den Maßstab 1:20.000 erhält. Diese beiden wichtigen Parameter orientieren sich an der Historie des Projektes. (1) Eine verbesserte Lesbarkeit trotz Vergrößerung der Gesamtfläche, (2) die dargestellten Elemente müssen verifizierbar sein, (3) die Anzahl der Datei-Layer auf ein überschaubares Maß reduzieren und (4) eine plastischere Visualisierung sind u.a. Anforderungen an den Relaunch. Technisches Ziel ist die Erhöhung der informativen und illustrativen Qualität des Plans. Der Plan muss als Ausdruck, aber auch auf Displays überzeugen. Auf Displays kann der Ausschnitt eines Dokument vergrößert werden. Zu einer einheitlichen Gesamtwirkung kommt das Kriterium Detailaussagen hinzu.
+### 2. The next step is to organize the elevation maps for the render-loop. That are the files, which "bumps" the plan to a 2,5D-landscape, which can be logical illuminated with light and shadows. I found three possibilities:
 
-### :computer: Starter-Software:
-Der MaplOS3 wurde wieder in AutoCAD Map 3D (ACM) technisch konstruktiv weiterentwickelt. ACM eignet sich sehr gut für eine Entwurfsgestaltung zwischen CAD und GIS mit großen Datenmengen. Der MaplOS3 enthält ca. 50.000 Einzelelemente. Werden die abgebildeten Gebäude dazugerechnet, verdoppelt sich die Anzahl auf über 100.000 (QGIS errechnet beim Einlesen einer .dwg oder .dxf die Anzahl der importierten Elemente). ACM bleibt dabei überwiegend performant und robust. Das Verschieben oder die individuelle Anpassung von Vektoren geht schneller als z.B. in QGIS. Die Arbeit mit georeferenzierten Inhalten läuft im Gegensatz z.B. zu Vectorworks ohne mehrere Nullpunkte. Außerdem lesen viele Programme .dwg- oder .dxf-Dateien problemlos ein.
+1. digital surface model (bDOM in german):     
 
-# :world_map: Masterplan Cottbuser Ostsee 3.0
-:white_check_mark: Georeferenziertes Rendering (Rasterbild) erstellen und als Web-Map publizieren mit Standortermittlung.
+![digital surface model](https://raw.githubusercontent.com/stadtentwicklung/masterplan/master/img/00_1_bDOM_to_normalmap.png)
 
-This repo only includes the app for polish visitors.
+2. digital terrain model (DGM in german):
 
-## :computer: Link to original (german) [https://github.com/stadtentwicklung/map1]
+![digital terrain model](https://raw.githubusercontent.com/stadtentwicklung/masterplan/master/img/00_2_dgm_to_normalmap.png)
 
-This repository above has a detailed README with more material of how to create such a map in GIS on desktop.
-Some new information about inovations in the render-pipeline are in this link down:
+and 3. making a manual generated model (MGM):
 
-## :computer: Link to the update (german) [https://github.com/stadtentwicklung/masterplan/]
+![manual generated model](https://raw.githubusercontent.com/stadtentwicklung/masterplan/master/img/00_3_greymap_to_normalmap.png)
+
+The MGM is a map in grey colors directly changed in the colored original vector plan. Photoshop transform all these pieces automatically in a "Normalmap" for elevation information. I wanted to find out which of these will bumps the plan best.
+
+### 3. The last task is to fix it together. Every Normalmap will bump the plan individual.
+
+1. Bumping with bDOM (left), DGM (middle) and both (right):
+
+![manual generated model](https://raw.githubusercontent.com/stadtentwicklung/masterplan/master/02_render_bdom_dgm_both.png)
+
+2. Bumping with MEM (left) and MEM plus DGM (right):
+
+![manual generated model](https://raw.githubusercontent.com/stadtentwicklung/masterplan/master/img/03_render_mem_mem-dgm.png)
+
+3. Bumping the version with streets as mentioned above. The right result is the rendering of the final map: Buildings and streets has visible shadows because of the MEM, the surface has details because of the DGM.
+
+![manual generated model](https://raw.githubusercontent.com/stadtentwicklung/masterplan/master/img/04_render_mem_mem-dgm.png)
+
+## :computer: See the result here: [https://github.com/stadtentwicklung/masterplan/]
 
 ### :coffee::coffee::coffee: by [Stefan](https://github.com/stefanstoehr)
