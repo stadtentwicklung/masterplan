@@ -29,7 +29,7 @@ Here are some new information provided about the render-pipeline and the raster-
 
 ![digital terrain model](https://raw.githubusercontent.com/stadtentwicklung/masterplan/master/img/00_2_dgm_to_normalmap.png)
 
-and 3. making a manual generated model (MGM):
+3. making a manual generated model (MGM):
 
 ![manual generated model](https://raw.githubusercontent.com/stadtentwicklung/masterplan/master/img/00_3_greymap_to_normalmap.png)
 
