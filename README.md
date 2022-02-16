@@ -15,9 +15,7 @@ Here are some new information provided about the render-pipeline and the raster-
 
 ## :rocket: Rendering in detail:
 
-### 1. The original georeferenced vector plan is saved as a raster image (you can see a piece of the whole plan in two versions: (1) no streets and (2) with classified street infrastructure. I wanted to know what looks better at the end: 
-
-(1) streets from the vector plan on top or (2) streets included in the render-process.   
+### 1. The original georeferenced vector plan is saved as a raster image (you can see a piece of the whole plan in two versions: (1) no streets and (2) with classified street infrastructure. (I wanted to know what looks better at the end: (1) streets from the vector plan on top or (2) streets included in the render-process.)   
 
 ![screenshot raster image](https://raw.githubusercontent.com/stadtentwicklung/masterplan/master/img/01_plan_raster.png)
 
