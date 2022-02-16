@@ -7,10 +7,10 @@ This link above shows the original repository with a detailed README with more m
 
 Here are some new information provided about the render-pipeline and the raster-look.   
 
-### :camera_flash: Webmap 2.0:
+### :camera_flash: Webmap 2.0: [https://stadtentwicklung.github.io/masterplan/]
 ![Screenshot der GitHub-Pages App](https://raw.githubusercontent.com/stadtentwicklung/masterplan/master/img/update.JPG)
 
-### :camera_flash: Webmap 1.0:
+### :camera_flash: Webmap 1.0: [https://stadtentwicklung.github.io/map1/]
 ![Screenshot der GitHub-Pages App](https://raw.githubusercontent.com/stadtentwicklung/map1/master/img/screenshot.JPG) 
 
 ## :rocket: Entstehungsprozess:
